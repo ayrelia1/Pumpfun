@@ -18,7 +18,6 @@ channel_id = os.getenv('channel_id')
 
 @client.on_message(filters.chat(int(target_chat_id)))
 async def echo(client: Client, message: Message):
-    print(text)
     text = message.text
     try:
         if 'Token' in text and 'MCap' in text:
