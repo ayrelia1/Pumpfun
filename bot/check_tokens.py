@@ -6,7 +6,6 @@ import aiohttp
 import asyncio
 import logging
 import traceback
-from pyrogram import Client
 
 
 async def check_price_token():
@@ -25,7 +24,7 @@ async def check_price_token():
                 
                 text = f"""⭐️ Profit:  {x}X  ${symbol}\n\n
 Token:  <code>{address}</code>\n\n
-MCap:  💎 now {mcap}$\n\n"""
+MCap:  💎 at the time of achieving this goal {mcap}$\n\n"""
                 
                 
                 await bot.send_message(text=text, chat_id=channel_id, reply_to_message_id=message_id)
